@@ -4,4 +4,5 @@ COPY . /app
 RUN pip install -r requirements.txt
 RUN apt-get update && apt-get install -y nmap
 COPY exploit.py /app
-RUN chmod +x /app/exploit.py 
+RUN chmod +x /app/exploit.py
+CMD ["sleep", "infinity"]
